@@ -1,0 +1,74 @@
+name: movie_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.10+1
+  get_it: ^7.7.0
+  dio: ^5.4.3+1
+  flutter_bloc: ^8.1.5
+  equatable: ^2.0.5
+  pull_to_refresh: ^2.0.0
+  sliver_tools: ^0.2.12
+  loading_animation_widget: ^1.2.1
+  youtube_player_flutter: ^9.0.1
+  retrofit: ^4.1.0
+  logger: any
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  retrofit_generator: '>=7.0.0 <8.0.0'
+  build_runner: '>=2.3.0 <4.0.0'
+  json_serializable: ^6.6.2
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+
+  fonts:
+    - family: koHo_regular
+      fonts:
+        - asset: assets/fonts/KoHo-Regular.ttf
+          weight: 400
+    - family: koHo_semi_bold
+      fonts:
+        - asset: assets/fonts/KoHo-SemiBold.ttf
+          weight: 600
+    - family: koHo
+      fonts:
+        - asset: assets/fonts/KoHo-Regular.ttf
+        - asset: assets/fonts/KoHo-Italic.ttf
+          style: italic
+        - asset: assets/fonts/KoHo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/KoHo-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/KoHo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/KoHo-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/KoHo-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/KoHo-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
