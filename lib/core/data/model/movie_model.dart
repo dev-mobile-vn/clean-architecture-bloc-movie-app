@@ -30,18 +30,18 @@ class MovieModel {
 
   MovieModel(
       {required this.adult,
-        required this.backdropPath,
-        required this.id,
-        required this.originalTitle,
-        required this.overview,
-        required this.popularity,
-        required this.posterPath,
-        required this.title,
-        required this.video,
-        required this.voteAverage,
-        required this.voteCount,
-        required this.releaseDate,
-      });
+      required this.backdropPath,
+      required this.id,
+      required this.originalTitle,
+      required this.overview,
+      required this.popularity,
+      required this.posterPath,
+      required this.title,
+      required this.video,
+      required this.voteAverage,
+      required this.voteCount,
+      required this.releaseDate,
+    });
 
   factory MovieModel.fromJson(Map<String, dynamic> json) => _$MovieModelFromJson(json);
 }

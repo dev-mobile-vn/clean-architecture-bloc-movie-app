@@ -1,0 +1,20 @@
+{
+  "app_name": "App",
+  "title_add_text": "Add task",
+  "tab_home": "Home",
+  "tab_explore": "Explore",
+  "tab_my_list": "My List",
+  "tab_download": "Download",
+  "tab_profile": "Profile",
+  "label_menu_edit_profile": "Edit Profile",
+  "label_menu_notification": "Notification",
+  "label_menu_download": "Download",
+  "label_menu_security": "Security",
+  "label_menu_help_center": "Help Center",
+  "label_menu_privacy_policy": "Privacy Policy",
+  "label_menu_log_out": "Log out",
+  "label_menu_dark_mode": "Dark Mode",
+  "label_menu_language": "Language",
+  "title_top_movie": "Top 10 Movies This Week",
+  "title_new_release": "New Releases"
+}

@@ -1,0 +1,11 @@
+const String splashRoute = '/';
+const String onBoardRoute = '/on-board-screen';
+const String mainRoute = '/main-screen';
+const String welComeRoute = '/welcome-screen';
+const String loginRoute = '/login-screen';
+const String signUpRoute = '/sign-up-screen';
+const String forgotPassRoute = '/for-got-password-screen';
+const String movieDetailRoute = '/movie-detail-screen';
+const String listMovieRoute = '/list-movie-screen';
+const String watchVideoRoute = '/watch-video-screen';
+const String postCommentRoute = '/post-comment-screen';
