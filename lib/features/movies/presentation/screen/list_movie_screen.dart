@@ -1,10 +1,11 @@
-import 'package:movie_app/common/widgets/item_card.dart';
 import 'package:movie_app/core/bloc/base_movie_status.dart';
 import 'package:movie_app/core/data/model/movie_model.dart';
 import 'package:movie_app/di/dependency_injection.dart';
 import 'package:movie_app/features/movies/presentation/bloc/list_movie_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../core/common/widgets/item_card.dart';
 
 class ListMovieScreen extends StatefulWidget {
   final String path;

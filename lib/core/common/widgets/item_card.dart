@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../config/network_constants.dart';
-import '../../core/data/model/movie_model.dart';
+import '../../data/model/movie_model.dart';
 import '../contants/routers.dart';
 import 'image_widget.dart';
 

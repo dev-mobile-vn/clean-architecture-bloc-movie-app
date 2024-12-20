@@ -1,7 +1,8 @@
-import 'package:movie_app/common/widgets/image_widget.dart';
 import 'package:movie_app/core/data/model/movie_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../../../core/common/widgets/image_widget.dart';
 
 class BannerView extends StatelessWidget {
   final MovieModel movie;

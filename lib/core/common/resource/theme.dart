@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../app.dart';
+import '../../../main.dart';
+
 
 ThemeData themeData(BuildContext context) {
   return ThemeData(

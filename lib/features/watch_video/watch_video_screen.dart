@@ -1,8 +1,9 @@
-import 'package:movie_app/common/extensions/text_style_extension.dart';
-import 'package:movie_app/common/widgets/image_widget.dart';
+import 'package:movie_app/core/common/extensions/text_style_extension.dart';
 import 'package:movie_app/features/movie_detail/data/model/trailer_model.dart';
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+
+import '../../core/common/widgets/image_widget.dart';
 
 class WatchVideoArguments {
   final int index;
@@ -104,7 +105,7 @@ class _WatchVideoScreenState extends State<WatchVideoScreen> {
                                     padding: const EdgeInsets.symmetric(horizontal: 8),
                                     child: Text(
                                       listVideo[i].name,
-                                      style: Theme.of(context).textTheme.subtitle1,
+                                      style: Theme.of(context).textTheme.labelMedium,
                                     ),
                                   ),
                                 ),

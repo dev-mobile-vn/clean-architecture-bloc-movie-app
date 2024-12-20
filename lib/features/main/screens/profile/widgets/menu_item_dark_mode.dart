@@ -1,6 +1,7 @@
-import 'package:movie_app/common/widgets/svg_widget.dart';
-import 'package:movie_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../core/common/translations/l10n.dart';
+import '../../../../../core/common/widgets/svg_widget.dart';
 
 class MenuItemDarkMode extends StatefulWidget {
   const MenuItemDarkMode({super.key});

@@ -1,4 +1,3 @@
-import 'package:movie_app/common/contants/routers.dart';
 import 'package:movie_app/di/dependency_injection.dart';
 import 'package:movie_app/features/auth/forgot_pass_word/forgot_pass_word_screen.dart';
 import 'package:movie_app/features/auth/login/login_screen.dart';
@@ -6,7 +5,6 @@ import 'package:movie_app/features/auth/sign_up/sign_up_screen.dart';
 import 'package:movie_app/features/comments/post_comment_screen.dart';
 import 'package:movie_app/features/main/bloc/main_bloc.dart';
 import 'package:movie_app/features/main/screens/main_screen.dart';
-import 'package:movie_app/features/movie_detail/data/model/trailer_model.dart';
 import 'package:movie_app/features/movie_detail/presentation/screens/movie_detail_screen.dart';
 import 'package:movie_app/features/movies/presentation/bloc/list_movie_cubit.dart';
 import 'package:movie_app/features/movies/presentation/screen/list_movie_screen.dart';
@@ -16,6 +14,8 @@ import 'package:movie_app/features/wellcome/bloc/well_come_bloc.dart';
 import 'package:movie_app/features/wellcome/wellcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../common/contants/routers.dart';
 
 class AppRouters {
   final MainBloc mainBloc = MainBloc();

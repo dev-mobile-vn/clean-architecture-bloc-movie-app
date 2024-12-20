@@ -1,10 +1,12 @@
-import 'package:movie_app/common/contants/routers.dart';
-import 'package:movie_app/common/widgets/button_widget.dart';
-import 'package:movie_app/common/widgets/svg_widget.dart';
-import 'package:movie_app/common/widgets/text_widget.dart';
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../core/common/contants/routers.dart';
+import '../../../core/common/widgets/button_widget.dart';
+import '../../../core/common/widgets/svg_widget.dart';
+import '../../../core/common/widgets/text_widget.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

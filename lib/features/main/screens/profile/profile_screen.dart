@@ -1,7 +1,7 @@
-import 'package:movie_app/common/contants/routers.dart';
-import 'package:movie_app/common/widgets/svg_widget.dart';
-import 'package:movie_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import '../../../../core/common/contants/routers.dart';
+import '../../../../core/common/translations/l10n.dart';
+import '../../../../core/common/widgets/svg_widget.dart';
 import 'widgets/menu_item.dart';
 import 'widgets/menu_item_dark_mode.dart';
 import 'widgets/menu_item_language.dart';

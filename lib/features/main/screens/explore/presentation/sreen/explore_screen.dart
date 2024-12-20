@@ -1,6 +1,3 @@
-import 'package:movie_app/common/widgets/item_card.dart';
-import 'package:movie_app/common/widgets/loading.dart';
-import 'package:movie_app/common/widgets/svg_widget.dart';
 import 'package:movie_app/core/bloc/base_movie_status.dart';
 import 'package:movie_app/di/dependency_injection.dart';
 import 'package:movie_app/features/main/screens/explore/presentation/bloc/explore_cubit.dart';
@@ -8,6 +5,10 @@ import 'package:movie_app/features/main/screens/explore/presentation/widgets/fil
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../../../../core/common/widgets/item_card.dart';
+import '../../../../../../core/common/widgets/loading.dart';
+import '../../../../../../core/common/widgets/svg_widget.dart';
 
 class ExploreScreen extends StatefulWidget {
   const ExploreScreen({super.key});

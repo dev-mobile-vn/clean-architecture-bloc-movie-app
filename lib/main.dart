@@ -1,17 +1,24 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
+import 'dart:io';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'common/contants/language_code.dart';
-import 'common/contants/routers.dart';
-import 'common/resource/theme.dart';
-import 'config/app_routes.dart';
+import 'core/common/contants/language_code.dart';
+import 'core/common/contants/routers.dart';
+import 'core/common/resource/theme.dart';
+import 'core/common/translations/l10n.dart';
+import 'core/config/app_config.dart';
+import 'core/config/app_routes.dart';
 import 'di/dependency_injection.dart';
 import 'features/main/screens/explore/presentation/bloc/explore_cubit.dart';
 import 'features/main/screens/home/bloc/home_cubit.dart';
-import 'generated/l10n.dart';
 
 const koHoFontFamily = 'koHo';
+
+
+void main() async {
+  await appConfig();
+  runApp(const App());
+}
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -37,13 +44,13 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
         providers: [
-           BlocProvider<HomeCubit>.value(value: sl<HomeCubit>()),
-           BlocProvider<ExploreCubit>.value(value: sl<ExploreCubit>()),
+          BlocProvider<HomeCubit>.value(value: sl<HomeCubit>()),
+          BlocProvider<ExploreCubit>.value(value: sl<ExploreCubit>()),
         ],
         child: MaterialApp(
           initialRoute: splashRoute,
           onGenerateRoute: AppRouters().generateRoute,
-          title: 'App',
+          title: 'Movie',
           debugShowCheckedModeBanner: false,
           theme: themeData(context),
           localizationsDelegates: const [
@@ -59,3 +66,5 @@ class _AppState extends State<App> {
         ));
   }
 }
+
+

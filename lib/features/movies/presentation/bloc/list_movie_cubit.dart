@@ -31,6 +31,9 @@ class ListMovieCubit extends Cubit<ListMovieState> {
   int page = 1;
   void onGetListMovieLoadMore(String path) async {
     try {
+      if (state.status == BaseMovieStatus.loadMore) {
+        return;
+      }
       emit(state.copyWith(status: BaseMovieStatus.loadMore));
       MovieResponse response = await movieUseCase(QueryRequest("en_US", page++, path));
       if (response.movies.isNotEmpty) {

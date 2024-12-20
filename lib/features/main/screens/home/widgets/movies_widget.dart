@@ -1,8 +1,9 @@
-import 'package:movie_app/common/contants/routers.dart';
-import 'package:movie_app/common/widgets/image_widget.dart';
-import 'package:movie_app/config/network_constants.dart';
 import 'package:movie_app/core/data/model/movie_model.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../core/common/contants/routers.dart';
+import '../../../../../core/common/widgets/image_widget.dart';
+import '../../../../../core/config/network_constants.dart';
 
 class MoviesWidget extends StatelessWidget {
   final List<MovieModel> items;

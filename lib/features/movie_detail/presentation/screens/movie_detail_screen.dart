@@ -1,9 +1,3 @@
-import 'package:movie_app/common/contants/routers.dart';
-import 'package:movie_app/common/utils/times_utils.dart';
-import 'package:movie_app/common/widgets/image_widget.dart';
-import 'package:movie_app/common/widgets/loading.dart';
-import 'package:movie_app/common/widgets/svg_widget.dart';
-import 'package:movie_app/config/network_constants.dart';
 import 'package:movie_app/core/bloc/base_movie_status.dart';
 import 'package:movie_app/core/data/model/movie_model.dart';
 import 'package:movie_app/di/dependency_injection.dart';
@@ -17,6 +11,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sliver_tools/sliver_tools.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import '../../../../core/common/contants/routers.dart';
+import '../../../../core/common/utils/times_utils.dart';
+import '../../../../core/common/widgets/image_widget.dart';
+import '../../../../core/common/widgets/loading.dart';
+import '../../../../core/common/widgets/svg_widget.dart';
+import '../../../../core/config/network_constants.dart';
 import 'view/similar_movies_view.dart';
 
 class MovieDetailScreen extends StatefulWidget {
@@ -381,8 +381,11 @@ class TrailersView extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
       itemBuilder: (context, index) {
         return GestureDetector(
-          onTap: () => Navigator.pushNamed(context, watchVideoRoute,
-              arguments: WatchVideoArguments(index: index, data: data)),
+          onTap: () => Navigator.pushNamed(
+            context,
+            watchVideoRoute,
+            arguments: WatchVideoArguments(index: index, data: data),
+          ),
           child: Padding(
             padding: const EdgeInsets.only(bottom: 8),
             child: Row(

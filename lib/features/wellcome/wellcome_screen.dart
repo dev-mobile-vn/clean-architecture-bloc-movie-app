@@ -1,7 +1,7 @@
-import 'package:movie_app/common/contants/routers.dart';
-import 'package:movie_app/common/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../core/common/contants/routers.dart';
+import '../../core/common/widgets/button_widget.dart';
 import 'bloc/well_come_bloc.dart';
 
 class WellComeScreen extends StatelessWidget {

@@ -1,0 +1,3 @@
+BASE_URL_API_MOVIE = https://api.themoviedb.org/3/movie/
+BASE_URL_API_SEARCH_MOVIE= https://api.themoviedb.org/3/search/
+AUTHORIZATION = Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwOTVhMWJlYjI2MWM3YzgzODVlYmI2NzM0OGI0MmRmNyIsInN1YiI6IjVkNDI4ZGFlOTVjMGFmMDAxNGQ4ODE5MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.psdgU4uUv769uu-8ouS4uLxHlE5RNmCU37rsgxTvNRQ

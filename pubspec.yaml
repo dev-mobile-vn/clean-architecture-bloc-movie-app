@@ -36,6 +36,12 @@ dev_dependencies:
   build_runner: '>=2.3.0 <4.0.0'
   json_serializable: ^6.6.2
 
+flutter_intl:
+  main_locale: en
+  enabled: true
+  output_dir: lib/common/translations
+  arb_dir: lib/common/translations
+
 flutter:
 
 

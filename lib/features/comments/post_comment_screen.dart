@@ -1,13 +1,14 @@
-import 'package:movie_app/common/extensions/text_style_extension.dart';
-import 'package:movie_app/common/widgets/loading.dart';
-import 'package:movie_app/common/widgets/svg_widget.dart';
-import 'package:movie_app/config/network_constants.dart';
 import 'package:movie_app/core/bloc/base_movie_status.dart';
+import 'package:movie_app/core/common/extensions/text_style_extension.dart';
 import 'package:movie_app/di/dependency_injection.dart';
 import 'package:movie_app/features/movie_detail/data/model/review_model.dart';
-import 'package:movie_app/features/movie_detail/presentation/screens/view/comment/bloc/comment_bloc_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../core/common/widgets/loading.dart';
+import '../../core/common/widgets/svg_widget.dart';
+import '../../core/config/network_constants.dart';
+import '../movie_detail/presentation/screens/view/comment/bloc/comment_bloc_cubit.dart';
 
 class PostCommentsScreen extends StatefulWidget {
   final String id;
